@@ -1,0 +1,21 @@
+p {
+  background-color: pink;
+  padding: 10px;
+}
+form > section {
+  background-color:grey
+}
+
+section {
+  background: aquamarine;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+a {
+  padding: 30px;
+  display: inline-block;
+  height: 50px;
+  margin: 30px;
+  background: purple;
+}

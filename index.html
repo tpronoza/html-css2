@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- tells the browswer that this document is in html 5.  if the html is uppercase then you have to specify more information (this was done in versions of html before 5.  so just make it lowercase)-->
+<html lang="en">
+  <!-- tells the browser that this is the root of the html document -->
+  <head>
+    <!-- container for all the head elements - link, meta, script, style, or title tags -->
+    <meta charset="UTF-8" />
+    <!-- this tells the browser what type of character set you are using.  You will practically always use UTF-8 as its the prefered standard for html-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- this sets the viewport of the site to match the width of the device you are on.  should always include this line -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- this specifies what versions of ie your site supports.  In this case we are only supporting modern browsers (edge and up) -->
+    <title>Document</title>
+    <!-- Whatever you type here will display in the title tab at the top of the browser -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- link to css file -->
+  </head>
+  <!-- closes head tag -->
+  <body>
+    <!-- section of the document that contains ALL the html -->
+
+    <!-- BLOCK LEVEL ELEMENT EXAMPLES  -->
+    <p>Paragraph Tag</p>
+    <ul>
+      <li>List Item</li>
+    </ul>
+    <section>
+      <h1>Section Title</h1>
+      <article>Section article</article>
+    </section>
+
+    <!-- INLINE ELEMENT EXAMPLES  -->
+    <a href="#">Link Tag</a>
+    <code>This is some code</code>
+    <span>This is a span</span>
+
+    <hr />
+
+    <!-- FORM -->
+    <form>
+      <!-- TEXT INPUTS -->
+      <section class="form_inputs">
+        <h2>Your Info</h2>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" /><br />
+        <label for="pwd">Password:</label><br />
+        <input type="password" id="pwd" name="pwd" />
+      </section>
+
+      <!-- RADIOS -->
+      <!-- NOTICE THE NAMES ON EACH INPUT IS THE SAME BUT THE IDS ARE DIFFERENT -->
+      <section class="form_radios">
+        <h2>Favorite Language</h2>
+        <input type="radio" id="html" name="fav_language" value="HTML" />
+        <label for="html">HTML</label><br />
+        <input type="radio" id="css" name="fav_language" value="CSS" />
+        <label for="css">CSS</label><br />
+        <input
+          type="radio"
+          id="javascript"
+          name="fav_language"
+          value="JavaScript"
+        />
+        <label for="javascript">JavaScript</label>
+      </section>
+
+      <!-- CHECKBOXES -->
+      <section class="form_checkboxes">
+        <h2>What kind of transport do you have?</h2>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+        <label for="vehicle1"> I have a bike</label><br />
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+        <label for="vehicle2"> I have a car</label><br />
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+        <label for="vehicle3"> I have a boat</label>
+      </section>
+
+      <!-- SELECT -->
+      <section class="form_select">
+        <h2>The best car</h2>
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+          <option value="honda">Honda</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
+      </section>
+
+      <!-- TEXTAREA -->
+      <section class="form_textarea">
+        <h2>Gimme more info</h2>
+        <textarea
+          name="message"
+          rows="10"
+          cols="30"
+          placeholder="type something great!"
+        ></textarea>
+      </section>
+
+      <!-- RESET BUTTON -->
+      <button type="reset">Reset Form</button>
+      <!-- SUBMIT BUTTON -->
+      <button type="submit">Submit Form</button>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+  <!-- closing tag for body -->
+</html>
+<!-- closing tag for html -->
